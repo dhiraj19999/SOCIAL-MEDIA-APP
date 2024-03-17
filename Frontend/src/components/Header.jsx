@@ -1,4 +1,3 @@
-import React from "react";
 import { Flex, Image, useColorMode, Text } from "@chakra-ui/react";
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();

@@ -11,6 +11,8 @@ const generateTokenAndSetCookie = (userId, res) => {
     sameSite: "strict", // CSRF
   });
 
+  console.log("cookie", token);
+
   return token;
 };
 

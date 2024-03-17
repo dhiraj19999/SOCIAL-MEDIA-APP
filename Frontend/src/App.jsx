@@ -1,13 +1,11 @@
-import { useState } from "react";
 import "./App.css";
 import { Box, Container } from "@chakra-ui/react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
-import PostPage from "./pages/PostPage";
 import UserPage from "./pages/UserPage";
+import PostPage from "./pages/PostPage";
 import Header from "./components/Header";
 function App() {
   const { pathname } = useLocation();
-
   return (
     <>
       <Box position={"relative"} w="full">
