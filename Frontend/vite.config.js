@@ -9,7 +9,7 @@ export default defineConfig({
     // Get rid of the CORS error
     proxy: {
       "/api": {
-        target: "https://socailverse-backend-2.onrender.com",
+        target: "https://socailverse-backend-6.onrender.com/",
         changeOrigin: true,
         secure: false,
       },

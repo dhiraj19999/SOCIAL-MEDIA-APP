@@ -33,10 +33,12 @@ app.use(cookieParser());
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/messages", messageRoutes);
-
+app.get("/", (req, res) => {
+  res.send("welcome to SocialVerse");
+});
 // http://localhost:5000 => backend,frontend
 
-if (process.env.NODE_ENV === "production") {
+/*if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
   // react app
@@ -44,7 +46,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
   });
 }
-
+*/
 server.listen(PORT, () =>
   console.log(`Server started at http://localhost:${PORT}`)
 );
